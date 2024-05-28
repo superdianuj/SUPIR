@@ -26,6 +26,7 @@
     conda create -n SUPIR python=3.8 -y
     conda activate SUPIR
     pip install --upgrade pip
+    conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.7 -c pytorch -c nvidia
     pip install -r requirements.txt
     ```
 
@@ -34,6 +35,8 @@
 For users who can connect to huggingface, please setting `LLAVA_CLIP_PATH, SDXL_CLIP1_PATH, SDXL_CLIP2_CKPT_PTH` in `CKPT_PTH.py` as `None`. These CLIPs will be downloaded automatically. 
 
 #### Dependent Models
+
+    
 * [SDXL CLIP Encoder-1](https://huggingface.co/openai/clip-vit-large-patch14)
 * [SDXL CLIP Encoder-2](https://huggingface.co/laion/CLIP-ViT-bigG-14-laion2B-39B-b160k)
 * [SDXL base 1.0_0.9vae](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/blob/main/sd_xl_base_1.0_0.9vae.safetensors)
@@ -43,6 +46,11 @@ For users who can connect to huggingface, please setting `LLAVA_CLIP_PATH, SDXL_
   * Replacement of `SDXL base 1.0_0.9vae` for Photo Realistic
 * (optional) [Juggernaut_RunDiffusionPhoto2_Lightning_4Steps](https://huggingface.co/RunDiffusion/Juggernaut-XL-Lightning/blob/main/Juggernaut_RunDiffusionPhoto2_Lightning_4Steps.safetensors)
   * Distilling model used in `SUPIR_v0_Juggernautv9_lightning.yaml`
+ 
+  ```bash
+  # Download above models via following
+  python download_dependent_models.py
+  ```
 
 
 #### Models we provided:
