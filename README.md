@@ -46,11 +46,12 @@ For users who can connect to huggingface, please setting `LLAVA_CLIP_PATH, SDXL_
   * Replacement of `SDXL base 1.0_0.9vae` for Photo Realistic
 * (optional) [Juggernaut_RunDiffusionPhoto2_Lightning_4Steps](https://huggingface.co/RunDiffusion/Juggernaut-XL-Lightning/blob/main/Juggernaut_RunDiffusionPhoto2_Lightning_4Steps.safetensors)
   * Distilling model used in `SUPIR_v0_Juggernautv9_lightning.yaml`
- 
-  ```bash
-  # Download above models via following
-  python download_dependent_models.py
-  ```
+
+
+```bash
+# Download above models via following
+python download_dependent_models.py
+```
 
 
 #### Models we provided:
