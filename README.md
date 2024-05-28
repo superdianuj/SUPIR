@@ -51,6 +51,12 @@ For users who can connect to huggingface, please setting `LLAVA_CLIP_PATH, SDXL_
 ```bash
 # Download above models via following
 python download_dependent_models_v2.py
+cd my_models
+gdown --id 1aTLhTLUKK8nkNAotB7kZgfKc8SGA_TL2 -O SUPIR-v0F.ckpt
+gdown --id 1ohCIBV_RAej1zuiidHph5qXNuD4GRxO3 -O SUPIR-v0Q.ckpt
+cd ..
+
+# if gdown doesnot work then download v0F and v0Q via following links
 ```
 
 
