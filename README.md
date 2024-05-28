@@ -50,7 +50,7 @@ For users who can connect to huggingface, please setting `LLAVA_CLIP_PATH, SDXL_
 
 ```bash
 # Download above models via following
-python download_dependent_models.py
+python download_dependent_models_v2.py
 ```
 
 
