@@ -9,7 +9,7 @@
       <p>Original Image</p>
     </td>
     <td style="text-align: center;">
-      <img src="output.png" alt="Image 2" style="width: 300px;">
+      <img src="outpit.png" alt="Image 2" style="width: 300px;">
       <br>
       <p>Output Image (SR x4) </p>
     </td>
