@@ -90,7 +90,6 @@ RealPhoto60: [Baidu Netdisk](https://pan.baidu.com/s/1CJKsPGtyfs8QEVCQ97voBA?pwd
 ```Shell
 Usage: 
 -- python test.py [options] 
--- python gradio_demo.py [interactive options]
 
 --img_dir                Input folder.
 --save_dir               Output folder.
@@ -130,19 +129,6 @@ CUDA_VISIBLE_DEVICES=0,1 python test.py --img_dir '/opt/data/private/LV_Dataset/
 CUDA_VISIBLE_DEVICES=0,1 python test.py --img_dir '/opt/data/private/LV_Dataset/DiffGLV-Test-All/RealPhoto60/LQ' --save_dir ./results-F --SUPIR_sign F --upscale 2 --s_cfg 4.0 --linear_CFG
 ```
 
-### Gradio Demo
-```Shell
-CUDA_VISIBLE_DEVICES=0,1 python gradio_demo.py --ip 0.0.0.0 --port 6688 --use_image_slider --log_history
-
-# Juggernaut_RunDiffusionPhoto2_Lightning_4Steps and DPM++ M2 SDE Karras for fast sampling
-CUDA_VISIBLE_DEVICES=0,1 python gradio_demo.py --ip 0.0.0.0 --port 6688 --use_image_slider --log_history --opt options/SUPIR_v0_Juggernautv9_lightning.yaml
-
-# less VRAM & slower (12G for Diffusion, 16G for LLaVA)
-CUDA_VISIBLE_DEVICES=0,1 python gradio_demo.py --ip 0.0.0.0 --port 6688 --use_image_slider --log_history --loading_half_params --use_tile_vae --load_8bit_llava
-```
-<p align="center">
-  <img src="assets/DemoGuide.png">
-</p>
 
 
 
