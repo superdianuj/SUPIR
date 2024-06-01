@@ -1,13 +1,20 @@
 ## (CVPR2024) Scaling Up to Excellence: Practicing Model Scaling for Photo-Realistic Image Restoration In the Wild
 
-> [[Paper](https://arxiv.org/abs/2401.13627)] &emsp; [[Project Page](http://supir.xpixel.group/)] &emsp; [Online Demo (Coming soon)] <br>
-> Fanghua, Yu, [Jinjin Gu](https://www.jasongt.com/), Zheyuan Li, Jinfan Hu, Xiangtao Kong, [Xintao Wang](https://xinntao.github.io/), [Jingwen He](https://scholar.google.com.hk/citations?user=GUxrycUAAAAJ), [Yu Qiao](https://scholar.google.com.hk/citations?user=gFtI-8QAAAAJ), [Chao Dong](https://scholar.google.com.hk/citations?user=OSDCB0UAAAAJ) <br>
-> Shenzhen Institute of Advanced Technology; Shanghai AI Laboratory; University of Sydney; The Hong Kong Polytechnic University; ARC Lab, Tencent PCG; The Chinese University of Hong Kong <br>
 
-
-<p align="center">
-  <img src="assets/teaser.png">
-</p>
+<table>
+  <tr>
+    <td style="text-align: center;">
+      <img src="input.jpg" alt="Image 1" style="width: 300px;">
+      <br>
+      <p>Original Image</p>
+    </td>
+    <td style="text-align: center;">
+      <img src="output.png" alt="Image 2" style="width: 300px;">
+      <br>
+      <p>Output Image (SR x4) </p>
+    </td>
+  </tr>
+</table>
 
 ---
 #### ⚠ RAM Requirement: 60G
